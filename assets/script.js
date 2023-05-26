@@ -18,6 +18,7 @@ function addProjectsToPage(){
     const projects = [];
 
     // adds projects to array
+    
     projects.push(new project('Quote & Speech', '05/18/2023', 'img of deployed app', 'https://kzb11128.github.io/quote-and-speech/'))
     projects.push(new project('Coding Quiz', '04/27/2023', 'img of deployed app', 'https://bcoleman56.github.io/coding-quiz/index.html'))
     projects.push(new project('Weather Website', '05/11/2023', 'img of deployed app', 'https://bcoleman56.github.io/weather-website/'))
@@ -28,14 +29,14 @@ function addProjectsToPage(){
 
     // LOOPS THROUGH PROJECTS  
     for (let i = 0; i < projects.length; i++){
+
         console.log(projects[i]);
 
         // CARD ELEMENT
         let projectEl = document.createElement('div');
-        projectEl.classList.add('max-w-sm', 'rounded', 'overflow-hidden', 'shadow-lg', 'box-border', 'h-75', 'w-75', 'p-4', 'hover:bg-gray-300');
+        projectEl.classList.add('max-w-sm', 'rounded', 'overflow-hidden', 'shadow-lg', 'box-border', 'h-50', 'w-50', 'hover:bg-gray-300', 'p-5');
 
-        // IMG ELEMENT
-        let imgEl = document.createElement('img');
+        let imgEl = document.createElement('img')
         imgEl.classList.add('w-full', 'hover:border-solid', 'hover:border-blue-500', 'hover:border-4', 'w-full', 'h-9/12');
         imgEl.setAttribute('src', 'assets/images/' + projects[i].name + '.png')
         imgEl.setAttribute('alt', 'Image of ' + projects[i].name + ' project');
@@ -50,7 +51,7 @@ function addProjectsToPage(){
 
         // CONTAINER ELEMENT    
         let containerEl = document.createElement('div');
-        containerEl.classList.add('px-6', 'py-4');
+        containerEl.classList.add('px-4', 'py-4');
         
         // TEXT DIV ELEMENT
         let textDivEl = document.createElement('div');
@@ -77,8 +78,7 @@ function addProjectsToPage(){
 
     }
     //displays the footer after projects, so it doesnt flash on the screen under about me section
-    let footerEl = document.querySelector('footer');
-    footerEl.classList.remove('hidden');
+    // projectsEl.classList.add('space-x-5')
 }
 
 
