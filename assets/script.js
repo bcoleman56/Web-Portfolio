@@ -19,7 +19,7 @@ function addProjectsToPage(){
 
     // adds projects to array
     
-    projects.push(new project('Quote & Speech', '05/18/2023', 'img of deployed app', 'https://kzb11128.github.io/quote-and-speech/'))
+    projects.push(new project('Quote Hub', '05/18/2023', 'img of deployed app', 'https://pure-scrubland-99203-50ab01d03184.herokuapp.com/'))
     projects.push(new project('Coding Quiz', '04/27/2023', 'img of deployed app', 'https://bcoleman56.github.io/coding-quiz/index.html'))
     projects.push(new project('Weather Website', '05/11/2023', 'img of deployed app', 'https://bcoleman56.github.io/weather-website/'))
 
