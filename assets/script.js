@@ -6,11 +6,12 @@ function addProjectsToPage(){
 
     // Creates a new data type of project 
     class project {
-        constructor(name, date, img, link) {
+        constructor(name, date, img, link, text) {
             this.name = name;
             this.date = date;
             this.img = img;
             this.link = link;
+            this.text = text;
         }
     }
 
@@ -19,9 +20,9 @@ function addProjectsToPage(){
 
     // adds projects to array
     
-    projects.push(new project('Quote Hub', '05/18/2023', 'img of deployed app', 'https://pure-scrubland-99203-50ab01d03184.herokuapp.com/'))
-    projects.push(new project('Coding Quiz', '04/27/2023', 'img of deployed app', 'https://bcoleman56.github.io/coding-quiz/index.html'))
-    projects.push(new project('Weather Website', '05/11/2023', 'img of deployed app', 'https://bcoleman56.github.io/weather-website/'))
+    projects.push(new project('Quote Hub', '05/18/2023', 'img of deployed app', 'https://pure-scrubland-99203-50ab01d03184.herokuapp.com/', 'Welcome to QuoteHub! This web application allows users to generate random quotes and save their favorites for future reference. The website is built using Handlebars, Node.js, MySQL, Tailwind CSS, and Alpine.js. It is deployed on Heroku and the source code is available on GitHub.'))
+    projects.push(new project('Coding Quiz', '04/27/2023', 'img of deployed app', 'https://bcoleman56.github.io/coding-quiz/index.html', 'This website lets the user take a short quiz to test their coding knowledge.'))
+    projects.push(new project('Weather Website', '05/11/2023', 'img of deployed app', 'https://bcoleman56.github.io/weather-website/', 'This web application lets the user get the weather for a city by employing API calls.'))
 
 
     // HTML ELEMENT SELECTORS
