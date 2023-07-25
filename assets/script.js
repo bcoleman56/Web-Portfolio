@@ -61,7 +61,7 @@ function addProjectsToPage(){
 
         let textEl = document.createElement('p');
         textEl.classList.add('text-gray-700', 'text-base');
-        textEl.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.'
+        textEl.textContent = projects[i].text;
         
 
 
